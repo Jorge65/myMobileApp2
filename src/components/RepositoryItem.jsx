@@ -1,14 +1,18 @@
 import { Text, View, Image, StyleSheet, Pressable } from "react-native";
 
 const styles = StyleSheet.create({
-    separator: {
-      height: 10,
+    item: {
+      backgroundColor: '#bbbb',
+      padding: 20,
+      marginVertical: 8,
+      marginHorizontal: 16,
     },
   });
 
 
 const RepositoryItem = ({ props }) => {
-    console.log("...", props)
+    //console.log("...", props)
+    //console.log("...")    
     return (
         <View style={styles.item}>
         <Text>Full name: {props.fullName}</Text>
