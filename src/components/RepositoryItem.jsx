@@ -1,4 +1,4 @@
-import { Text, View, Image, StyleSheet, Pressable } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     item: {
