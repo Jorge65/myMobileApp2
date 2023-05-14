@@ -20,15 +20,16 @@ const styles = StyleSheet.create({
 
 const AppBar = () => {
   return (
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView horizontal>
         <Link to="/">
           <Text style={styles.pressable}>Repositories</Text>
           </Link>
         <Link to="/sign-in">
           <Text style={styles.pressable}>Sign in</Text>
         </Link>
-
-      </View>
+      </ScrollView>
+    </View>
   )
 }
 
