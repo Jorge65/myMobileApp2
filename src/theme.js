@@ -19,6 +19,7 @@ const theme = {
       appBar: 'blue',
       repositoryItem: "white",
       importantInfo: 'blue',
+      mainBackground: 'grey'
     },
   };
   
