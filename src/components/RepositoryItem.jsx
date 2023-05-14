@@ -80,10 +80,30 @@ const RepositoryItem = ({ props }) => {
             </View>
         </View>
       <View style={styles.lowerContainer}>
-        <TwoRowInfo text="Stars" number={props.stargazersCount} />
-        <TwoRowInfo text="Forks" number={props.forksCount} />
-        <TwoRowInfo text="Reviews" number={props.reviewCount} />
-        <TwoRowInfo text="Rating" number={props.ratingAverage} />
+        <TwoRowInfo text="Stars" 
+          number={
+            props.stargazersCount > 1000
+              ? (props.stargazersCount / 1000).toFixed(2).slice(0, -1) + "k"
+              : props.stargazersCount
+          } />
+        <TwoRowInfo text="Forks" 
+          number={
+            props.forksCount > 1000
+              ? (props.forksCount / 1000).toFixed(2).slice(0, -1) + "k"
+              : props.forksCount
+          } />
+        <TwoRowInfo text="Reviews" 
+          number={
+            props.reviewCount > 1000
+              ? (props.reviewCount / 1000).toFixed(2).slice(0, -1) + "k"
+              : props.reviewCount
+          } />
+        <TwoRowInfo text="Rating" 
+          number={
+            props.ratingAverage > 1000
+              ? (props.ratingAverage / 1000).toFixed(2).slice(0, -1) + "k"
+              : props.ratingAverage
+          } />
       </View>
     </View>  
   );
