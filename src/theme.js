@@ -4,6 +4,7 @@ const theme = {
       textSecondary: '#586069',
       primary: '#0366d6',
       inputBox: 'blue',
+      error: "#d73a4a",
     },
     fontSizes: {
       body: 14,
@@ -21,7 +22,8 @@ const theme = {
       repositoryItem: "white",
       importantInfo: 'blue',
       button: 'blue',
-      mainBackground: 'grey'
+      mainBackground: 'grey',
+      error: "#d73a4a",
     },
   };
   

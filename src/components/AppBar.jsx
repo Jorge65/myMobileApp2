@@ -3,8 +3,7 @@ import { Link } from "react-router-native";
 
 import Constants from 'expo-constants'
 import Text from './Text'
-import theme from "../theme"
-import SignIn from './SignIn';
+import theme from '../theme'
 
 const styles = StyleSheet.create({
   container: {
